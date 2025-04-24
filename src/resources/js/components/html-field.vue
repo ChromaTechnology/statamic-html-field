@@ -49,21 +49,19 @@ export default {
         },
     },
     mounted() {
-        this.codemirror = CodeMirror(this.$refs.codemirror);
-
-        // this.codemirror = CodeMirror(this.$refs.codemirror, {
-        //     value: this.getValue,
-        //     mode: this.config.mode,
-        //     addModeClass: true,
-        //     keyMap: this.config.key_map,
-        //     tabSize: this.config.indent_size,
-        //     indentWithTabs: this.config.indent_type !== 'spaces',
-        //     lineNumbers: this.config.line_numbers,
-        //     lineWrapping: this.config.line_wrapping,
-        //     matchBrackets: true,
-        //     readOnly: this.readOnlyOption,
-        //     theme: this.exactTheme,
-        // });
+        this.codemirror = CodeMirror(this.$refs.codemirror, {
+            value: this.getValue,
+            // mode: this.config.mode,
+            // addModeClass: true,
+            // keyMap: this.config.key_map,
+            // tabSize: this.config.indent_size,
+            // indentWithTabs: this.config.indent_type !== 'spaces',
+            // lineNumbers: this.config.line_numbers,
+            // lineWrapping: this.config.line_wrapping,
+            // matchBrackets: true,
+            // readOnly: this.readOnlyOption,
+            theme: this.exactTheme,
+        });
 
         this.codemirror.on('change', (cm) => {
             console.log('change', cm.doc);
