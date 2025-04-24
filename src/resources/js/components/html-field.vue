@@ -45,7 +45,7 @@ export default {
             return this.isReadOnly ? 'nocursor' : false;
         },
         getValue() {
-            return this.value ? this.value : 'HTML HERE';
+            return this.value ? this.value : '<!-- HTML HERE -->';
         },
     },
     mounted() {
