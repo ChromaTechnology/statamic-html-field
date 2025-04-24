@@ -63,7 +63,10 @@ export default {
             theme: this.exactTheme,
         });
 
+        console.log('hello', this.codemirror);
+
         this.codemirror.on('change', (cm) => {
+            console.log('change', cm.doc);
             this.update(cm.doc.getValue());
         });
 
