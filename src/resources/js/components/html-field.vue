@@ -1,6 +1,6 @@
 <template>
-    <div class="code-fieldtype-container relative" :class="themeClass">
-        <div v-text="modeLabel" class="code-mode"></div>
+    <div class="html-fieldtype-container relative" :class="themeClass">
+        <div v-text="modeLabel" class="html-mode"></div>
         <div ref="codemirror"></div>
     </div>
 </template>

@@ -1,16 +1,16 @@
 <?php
 
-namespace SpazaComm\CodeTransmitter;
+namespace ChromaTech\HtmlField;
 
 use Statamic\Providers\AddonServiceProvider;
 
 class ServiceProvider extends AddonServiceProvider
 {
     protected $scripts = [
-        __DIR__.'/../public/js/code-transmitter.js',
+        __DIR__.'/../public/js/html-field.js',
     ];
 
     protected $fieldtypes = [
-        CodeTransmitter::class,
+        HtmlField::class,
     ];
 }

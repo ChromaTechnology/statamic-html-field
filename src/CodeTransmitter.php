@@ -1,13 +1,13 @@
 <?php
 
-namespace SpazaComm\CodeTransmitter;
+namespace ChromaTech\HtmlField;
 
 use Statamic\Fields\Fieldtype;
 use Statamic\Facades\Antlers;
 
-class CodeTransmitter extends Fieldtype
+class HtmlField extends Fieldtype
 {
-    protected static $title = 'Code Transmitter';
+    protected static $title = 'HTML Field';
 
     protected $icon = 'code';
 
@@ -138,7 +138,7 @@ class CodeTransmitter extends Fieldtype
     }
 
 
-    
+
      public function augment($value)
     {
         return str_replace('<?php', '&lt;?php', $value);

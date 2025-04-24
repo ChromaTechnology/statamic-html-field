@@ -1,5 +1,5 @@
-import CodeTransmitter from './components/code-transmitter';
+import HtmlField from './components/html-field';
 
 Statamic.booting(() => {
-    Statamic.$components.register('code_transmitter-fieldtype', CodeTransmitter);
+    Statamic.$components.register('html_field-fieldtype', HtmlField);
 });
