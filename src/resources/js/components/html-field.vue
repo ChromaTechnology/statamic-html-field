@@ -58,8 +58,8 @@ export default {
             // indentWithTabs: this.config.indent_type !== 'spaces',
             // lineNumbers: this.config.line_numbers,
             // lineWrapping: this.config.line_wrapping,
-            // matchBrackets: true,
-            // readOnly: this.readOnlyOption,
+            matchBrackets: true,
+            readOnly: this.readOnlyOption,
             theme: this.exactTheme,
         });
 
