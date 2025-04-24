@@ -45,11 +45,10 @@ export default {
             return this.isReadOnly ? 'nocursor' : false;
         },
         getValue() {
-            return this.value ? this.value : '<!-- HTML HERE -->';
+            return this.value ? this.value : this.config.code.code;
         },
     },
     mounted() {
-        console.log('hello', this.config);
         this.codemirror = CodeMirror(this.$refs.codemirror, {
             value: this.getValue,
             mode: this.config.mode,
