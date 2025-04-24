@@ -1,5 +1,5 @@
 {
-  "name": "chromatech/statamic-html-field",
+  "name": "chromatechnology/statamic-html-field",
   "description": "A Statamic fieldtype that allows to pass HTML code to the frontend (inline).",
   "version": "2.2.0",
   "keywords": [
