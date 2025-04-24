@@ -11,5 +11,5 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/resources/js/fieldtype.js', 'public/js/code-transmitter.js')
+mix.js('src/resources/js/fieldtype.js', 'public/js/html-field.js')
     .vue();
