@@ -45,7 +45,7 @@ export default {
             return this.isReadOnly ? 'nocursor' : false;
         },
         getValue() {
-            return this.value ? this.value : this.config.code;
+            return this.value ? this.value : 'HTML HERE';
         },
     },
     mounted() {
@@ -57,7 +57,7 @@ export default {
             tabSize: this.config.indent_size,
             indentWithTabs: this.config.indent_type !== 'spaces',
             lineNumbers: this.config.line_numbers,
-            // lineWrapping: this.config.line_wrapping,
+            lineWrapping: this.config.line_wrapping,
             matchBrackets: true,
             readOnly: this.readOnlyOption,
             theme: this.exactTheme,
