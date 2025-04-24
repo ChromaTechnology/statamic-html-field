@@ -1,39 +1,38 @@
 {
-  "name": "spazacomm/statamic-code-transmitter",
+  "name": "chromatech/statamic-html-field",
   "description": "A Statamic fieldtype that allows to pass HTML code to the frontend (inline).",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "keywords": [
       "statamic",
       "fieldtype",
-      "сode",
-      "transmitter",
-      "html"
+      "html",
+      "chromatech"
   ],
   "require": {
-    "php": "^8.1",
-    "illuminate/support": "^9.0 || ^10.0 || ^11.0",
+    "php": "^8.1 || ^8.2",
+    "illuminate/support": "^9.0 || ^10.0 || ^11.0 || ^12.0",
     "statamic/cms": "^3.0 || ^4.0 || ^5.0"
   },
   "license": "MIT",
   "autoload": {
     "psr-4": {
-        "SpazaComm\\CodeTransmitter\\": "src"
+        "ChromaTech\\HtmlField\\": "src"
     }
   },
   "authors": [
     {
-      "name": "Spaza Communications",
+      "name": "ChromaTech",
       "role": "Developer"
     }
   ],
   "extra": {
     "statamic": {
-      "name": "Code Embed",
+      "name": "HTML Field",
       "description": "A Statamic fieldtype that allows to pass HTML code to the frontend (inline)."
     },
     "laravel": {
       "providers": [
-          "SpazaComm\\CodeTransmitter\\ServiceProvider"
+          "ChromaTech\\HtmlField\\ServiceProvider"
       ]
     }
   },
