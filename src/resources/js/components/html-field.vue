@@ -49,6 +49,8 @@ export default {
         },
     },
     mounted() {
+        console.log('hello', this.$refs.codemirror);
+
         this.codemirror = CodeMirror(this.$refs.codemirror, {
             value: this.getValue,
             mode: this.config.mode,
